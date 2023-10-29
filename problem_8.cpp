@@ -1,18 +1,24 @@
-p#include <iostream>
-#include <cmath>
-using namespace std;
-
-int main(int argc, const char * argv[]) {
-    const int j=6;
-    int ARR[j];
-    for(int i=0; i<j; i++){
-        cin>>ARR[i];
-    }
-    for(int i=1; i<j; i+=2){
-        ARR[i]=pow(ARR[i],3);
-    }
-    for(int i=0; i<j; i++){
-        cout<<ARR[i]<<" ";
-    }
-    return 0;
-}
+#include <iostream>
+ using namespace std;
+ 
+ int main (){
+     int h;
+     cout << "Enter hight:" ;
+     cin >> h;
+     int start = h-1,counter = 1;
+     for(int i = 1;i < h; i++){
+         for(int j = 1;j < start; j++){
+             cout << " ";
+         }
+        
+         for(int j=0; j < counter; j++){
+             cout << "*";
+         } 
+          cout << endl;
+          start--;
+         counter+=2;
+        
+     }
+     
+     return 0;
+ }
